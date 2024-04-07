@@ -1,0 +1,12 @@
+.checkbox, .checkbox+.label--checkbox .icon-yes, .radio {
+  display: none;
+}
+
+.checkbox+.label--checkbox:active .icon-yes, .checkbox:checked+.label--checkbox .icon-yes {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 5px;
+  fill: @pink;
+  transition: .5s;
+}

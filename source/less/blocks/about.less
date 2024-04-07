@@ -1,0 +1,334 @@
+.about {
+  padding-top: 40px;
+}
+
+.about__items-wrapper, .about__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about__items:first-child {
+  margin-top: 0;
+}
+
+.about__items:last-child {
+  margin-bottom: 0;
+}
+
+.about__slogan {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.about__wrapper:first-child {
+  margin-top: 0;
+}
+
+.about__slogan:last-of-type {
+  margin-bottom: 33px;
+}
+
+.about__items {
+  padding-top: 81px;
+  background-color: @silver;
+  background-image: url(../../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+}
+
+.about__item {
+  display: block;
+  text-align: center;
+}
+
+.about__item-image {
+  display: none;
+}
+
+.about__item-image::after {
+  content: "";
+  position: absolute;
+  width: 292px;
+  height: 302px;
+  top: 0;
+  left: 0;
+}
+
+.about__content, .about__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 31px;
+  margin-bottom: 12px;
+}
+
+.about__item:first-of-type .about__title:first-of-type {
+  margin-top: 0;
+}
+
+.about__content {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.about__science {
+  display: none;
+}
+
+.about__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: @pink;
+}
+
+@media(min-width: @tablet-width) {
+  .about {
+    padding-top: 49px;
+  }
+
+  .about__items-wrapper {
+    position: relative;
+    min-height: 411px;
+  }
+
+  .about__items-wrapper, .about__wrapper {
+    width: 620px;
+  }
+
+  .about__slogan {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .about__slogan--small{
+    width: 408px;
+    margin: 0 auto;
+  }
+
+  .about__slogan:last-of-type {
+    margin-bottom: 45px;
+  }
+
+  .about__items-wrapper::before {
+    position: absolute;
+    content: "";
+    width: 268px;
+    height: 481px;
+    left: 0;
+    top: -70px;
+    border-image: url(../../img/iphone-screen-3-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    background-size: 268px auto;
+  }
+
+  .about__item {
+    margin-left: 300px;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .about__title {
+    margin-top: 34px;
+  }
+
+  .about__item--item-img {
+    padding-bottom: 0;
+    border-image: none;
+  }
+
+  .about__science-wrapper {
+    background-color: @white;
+  }
+
+  .about__science {
+    display: block;
+    position: relative;
+    min-height: 183px;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-left: 315px;
+    padding-bottom: 110px;
+    background-image: url(../../img/icon-editor-diagram-fill.svg), url(../../img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position: 23px 115px, 5px 59px;
+    background-size: 204px 204px, 241px 278px;
+  }
+
+  .about__science h3 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    width: 168px;
+  }
+
+  .about__science .about__content {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+
+  .about__science::before {
+    position: absolute;
+    content: "";
+    width: 175px;
+    height: 175px;
+    top: 130px;
+    left: 38px;
+    background-color: @white;
+    border-radius: 50%;
+  }
+
+  .about__science::after {
+    position: absolute;
+    content: "24";
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 700;
+    color: @pink;
+    top: 162px;
+    left: 68px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .about {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+
+  .about__items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about__items-wrapper, .about__wrapper {
+    width: 940px;
+  }
+
+  .about__slogan {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .about__slogan:last-of-type {
+    margin-bottom: 76px;
+  }
+
+  .about__wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .about__items-wrapper::before {
+    position: static;
+    width: 0;
+    height: 0;
+    background-image: none;
+  }
+
+  .about__item {
+    text-align: center;
+    flex-basis: 300px;
+    margin-left: 0;
+  }
+
+  .about__item-image {
+    display: block;
+    width: 100%;
+    height: 301px;
+    position: relative;
+  }
+
+  .about__item-image--black-white, .about__item-image--pink, .about__item-image--smile {
+    background-image: url(../../img/iphone-screen-1-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 292px auto;
+  }
+
+  .about__item-image--pink, .about__item-image--smile {
+    background-image: url(../../img/iphone-screen-2-desktop@2x.png);
+  }
+
+  .about__item-image--smile {
+    background-image: url(../../img/iphone-screen-3-desktop@1x.png);
+  }
+
+  .about__title {
+    margin-top: 56px;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .about__item:first-of-type .about__title:first-of-type {
+    margin-top: 56px;
+  }
+
+  .about__content {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .about__science-wrapper {
+    background-color: @silver;
+  }
+
+  .about__science {
+    box-sizing: border-box;
+    width: 940px;
+    padding-top: 157px;
+    padding-bottom: 113px;
+    padding-left: 365px;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 23px 136px, 0 66px;
+  }
+
+  .about__science h3 {
+    width: auto;
+    margin-bottom: 21px;
+  }
+
+  .about__science .about__content {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 31px;
+    padding-right: 45px;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .about__science::before {
+    width: 220px;
+    height: 220px;
+    left: 39px;
+    top: 151px;
+  }
+
+  .about__science::after {
+    font-size: 120px;
+    line-height: 120px;
+    left: 80px;
+    top: 196px;
+  }
+
+  .about__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

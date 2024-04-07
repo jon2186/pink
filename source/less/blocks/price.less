@@ -1,0 +1,244 @@
+.price {
+  padding-top: 91px;
+  padding-bottom: 26px;
+  background-color: @silver;
+  background-image: url(../../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+}
+
+.price__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.price__switcher {
+  display: none;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.price__list {
+  width: 840px;
+  box-sizing: border-box;
+  transform: translateX(-280px);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.price__list-head {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @dark-blue;
+}
+
+.price__value {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 278px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  border-left: 2px solid @lightgray;
+}
+
+.price__value--empty {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.price__value--flag::before {
+  position: absolute;
+  content: "хит";
+  height: 10px;
+  width: 28px;
+  top: 20px;
+  left: 9px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @pink;
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+
+.price__hit {
+  position: absolute;
+  display: none;
+}
+
+.price__value--flag .price__hit {
+  display: block;
+  top: 0;
+  left: -2px;
+}
+
+.price__list-body {
+  background-color: @white;
+}
+
+.price__field {
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid @lightgray;
+  border-top: none;
+}
+
+.price .icon-no, .price .icon-yes {
+  display: none;
+}
+
+.price .icon-yes {
+  fill: #3dc644;
+  }
+
+.price .icon-no {
+    fill: #f25b26;
+}
+
+@media(min-width: @tablet-width) {
+  .price {
+    padding-top: 88px;
+    padding-bottom: 70px;
+  }
+
+  .price__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .price__list {
+    transform: none;
+    width: 620px;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .price__list-head {
+    font-size: 16px;
+  }
+
+  .price__value {
+    min-width: 0;
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
+
+  .price__value--empty {
+    background-color: @silver;
+    border: none;
+    border-bottom: 2px solid @lightgray;
+  }
+
+  .price__value--flag::before {
+    top: 13px;
+    left: 2px;
+  }
+
+  .price__value--flag .price__hit {
+    display: block;
+    top: -10px;
+    left: -2px;
+  }
+
+  .price__field {
+    min-width: 154px;
+    padding: 7px 15px;
+  }
+
+  .price__field--empty {
+    text-transform: none;
+  }
+
+  .price__field--ok {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .price .icon-no, .price .icon-yes {
+    display: block;
+    width: 31px;
+    margin: 0 auto;
+  }
+
+  .price__field--cancel,
+  .price__field--none,
+  .price__field--ok {
+    font-size: 0;
+    line-height: 0;
+}
+
+}
+
+@media(min-width: @desktop-width) {
+  .price {
+    padding-top: 147px;
+    padding-bottom: 95px;
+  }
+
+  .price__list {
+    min-width: 940px;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .price__value {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .price__value--flag::before {
+    top: 20px;
+    left: 9px;
+  }
+
+  .price__value--flag .price__hit {
+    display: block;
+    top: 0px;
+    left: -2px;
+  }
+
+  .price__field {
+    min-width: 232px;
+    padding: 13px 24px 16px;
+  }
+
+  .price__field--empty {
+    font-size: 18px;
+  }
+
+  .price__value p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) and (min-width: @tablet-width) {
+  .intro--index, .photo-load__form-wrapper, .price__wrapper {
+    width: 620px;
+  }
+}
+
+
+@media (min-width: @tablet-width) and (min-width: @desktop-width) {
+  .intro--index, .photo-load__form-wrapper, .price__wrapper {
+    width: 940px;
+  }
+}

@@ -1,0 +1,30 @@
+.textarea-text{
+  overflow: auto;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 201px;
+  margin-top: 6px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 15px;
+  border: 2px solid @lightgray;
+  border-radius: 2px;
+}
+
+@media(min-width: @tablet-width) {
+  .textarea-text {
+    min-height: 193px;
+    margin-top: 21px;
+    padding-top: 15px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .textarea-text {
+    min-height: 128;
+    margin-top: 8px;
+  }
+}

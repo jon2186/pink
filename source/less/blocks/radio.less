@@ -1,0 +1,21 @@
+.radio {
+  display: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.radio+.label--radio::after {
+  display: none;
+}
+
+.radio+.label--radio:active::after, .radio:checked+.label--radio::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 12px;
+  left: 12px;
+  background-color: @pink;
+  border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+.contrast {
+  fill: @dark-blue;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+
+@media(min-width: @tablet-width) {
+  .contrast {
+    fill: @pink;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .contrast {
+    width: 32px;
+    height: 32px;
+  }
+}

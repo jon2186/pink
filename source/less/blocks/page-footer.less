@@ -1,0 +1,240 @@
+.page-footer {
+  position: relative;
+  padding-top: 41px;
+}
+
+.page-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-footer__contacts {
+  text-align: center;
+  padding-bottom: 41px;
+}
+
+.page-footer__contacts:first-child {
+  margin-top: 0;
+}
+
+.page-footer__contacts:last-child {
+  margin-bottom: 0;
+}
+
+.page-footer__title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.page-footer__call-us, .page-footer__visit-us, .page-footer__write-us {
+  margin-bottom: 23px;
+}
+
+.page-footer__sub-title {
+  margin-top: 25px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.page-footer__info, .page-footer__mail-link {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: @pink;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.page-footer__mail-link {
+  text-decoration: none;
+}
+
+.page-footer__map {
+  height: 200px;
+  background-color: @silver;
+  background-image: url(../../img/bg-triangle-white-footer.svg), url(../../img/bg-map.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto, 320px auto;
+  background-position: 50% 0, 50% 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.page-footer__copyright {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__copyright--hide {
+  display: none;
+}
+
+.page-footer__developer {
+  position: relative;
+}
+
+.page-footer__copyright-link {
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 42px;
+  color: @dark-blue;
+  text-decoration: none;
+}
+
+.page-footer__copyright-link .logo-htmlacademy {
+  position: absolute;
+  right: -10px;
+  top: -4px;
+}
+
+.page-footer--inner {
+  padding-top: 40px;
+  padding-bottom: 46px;
+}
+
+@media(min-width: @tablet-width) {
+  .page-footer {
+    padding-top: 46px;
+  }
+
+  .page-footer__copyright, .page-footer__wrapper {
+    width: 620px;
+  }
+
+  .page-footer__contacts {
+    padding-bottom: 26px;
+  }
+
+  .page-footer__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 45px;
+  }
+
+  .page-footer__title--narrow {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-footer__call-us {
+    width: 300px;
+    float: left;
+  }
+
+  .page-footer__write-us {
+    width: 300px;
+    float: right;
+  }
+
+  .page-footer__call-us, .page-footer__write-us {
+    margin-bottom: 47px;
+  }
+
+  .page-footer__visit-us {
+    clear: both;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-footer__sub-title {
+    margin-bottom: 4px;
+  }
+
+  .page-footer__info, .page-footer__mail-link {
+    line-height: 30px;
+  }
+
+  .page-footer__map {
+    height: 377px;
+    background-repeat: no-repeat, repeat;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 36px;
+    padding-bottom: 37px;
+    background-color: @white;
+  }
+
+  .page-footer__developer {
+    padding-top: 12px;
+    text-align: left;
+  }
+
+  .page-footer__copyright-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .page-footer__copyright-link .logo-htmlacademy {
+    right: -10px;
+    top: 8px;
+  }
+
+  .page-footer--photo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .page-footer {
+    padding-top: 63px;
+  }
+
+  .page-footer__copyright, .page-footer__wrapper {
+    width: 940px;
+  }
+
+  .page-footer__contacts {
+    padding-bottom: 20px;
+  }
+
+  .page-footer__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 58px;
+  }
+
+  .page-footer__title--narrow {
+    width: 640px;
+  }
+
+  .page-footer__call-us, .page-footer__visit-us, .page-footer__write-us {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .page-footer__sub-title {
+    margin-bottom: 24px;
+  }
+
+  .page-footer__map {
+    height: 501px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 70px;
+    padding-bottom: 72px;
+  }
+
+  .page-footer__copyright-link {
+    padding-right: 45px;
+    font-size: 18px;
+  }
+
+  .page-footer--inner {
+    padding-top: 0;
+  }
+}
